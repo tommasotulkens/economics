@@ -1,0 +1,9 @@
+title: "Professor Name"
+description: "Academic website"
+theme: minima
+
+header_pages:
+  - index.md
+  - research.md
+  - teaching.md
+  - other.md
