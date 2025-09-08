@@ -14,4 +14,6 @@ I am a PhD candidate at the Erasmus School of Economics in Rotterdam.  I am supe
 
 My research focuses on applied econometrics and policy evaluation.  
 
+[CV](src="{{ site.baseurl }}/files/profile.jpg")
+
 Contact: tulkens@ese.eur.nl
