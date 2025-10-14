@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Me
+title: Tommaso Tulkens
 permalink: /
 ---
 
@@ -13,7 +13,7 @@ Welcome to my web page!
 I am a PhD candidate at the Erasmus School of Economics in Rotterdam.  I am supervised by Olivier Marie and Anne Gielen.
 
 
-My research focuses on applied econometrics and policy evaluation.  
+My research focuses on applied econometrics and policy evaluation. I'm especially interested in labour markets, housing, and urban economics.
 
 
 [CV]({{ site.baseurl }}/files/CV_tulkens.pdf)

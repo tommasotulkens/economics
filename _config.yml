@@ -1,5 +1,5 @@
 title: "Tommaso Tulkens"
-description: "Academic website"
+description: "Academic website. Research, teaching, publications, and contact information."
 theme: minima
 
 header_pages:
@@ -7,3 +7,7 @@ header_pages:
   - research.md
   - teaching.md
   - other.md
+
+
+plugins:
+  - jekyll-sitemap
