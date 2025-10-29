@@ -1,5 +1,5 @@
 title: "Tommaso Tulkens"
-description: "Academic website. Research, teaching, publications, and contact information."
+description: "PhD candidate in economics at Erasmus university Rotterdam"
 theme: minima
 
 header_pages:
@@ -8,6 +8,7 @@ header_pages:
   - teaching.md
   - other.md
 
-
 plugins:
   - jekyll-sitemap
+
+include: ["_includes/head-custom.html"]
