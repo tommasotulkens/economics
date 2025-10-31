@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Tommaso Tulkens
+title: Homepage
 permalink: /
 ---
 
