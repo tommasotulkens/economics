@@ -32,5 +32,24 @@ function toggleAbstract() {
 }
 </script>
 
-- With Olivier Marie and Paolo Pinotti (2025) TBA
+- With Olivier Marie and Paolo Pinotti (2025), *Resolving the crime-migration puzzle.*
 
+<button onclick="toggleAbstract()">Show Abstract</button>
+
+<!-- Hidden div containing the abstract -->
+<div id="abstract" class="abstract-content" style="display: none;">
+{% raw %}
+Immigration is known not to causally affect crime. Despite this, individuals with a migration background are highly overrepresented in prisons. We propose a framework reconciling these two facts. Causal estimates of immigration on crime mask heterogeneity in the effects. Leveraging detailed administrative data and two distinct research designs, we show that immigration leads to a substitution between natives and immigrants in local crime markets whereas the overall criminal activity is unchanged. We are able to rule out discrimination as an alternative mechanism.
+{% endraw %}
+</div>
+
+-With Florian van Genderen (2026), *Debt burden and labour market outcomes.*
+
+<button onclick="toggleAbstract()">Show Abstract</button>
+
+<!-- Hidden div containing the abstract -->
+<div id="abstract" class="abstract-content" style="display: none;">
+{% raw %}
+TBA
+{% endraw %}
+</div>
