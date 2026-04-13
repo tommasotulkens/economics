@@ -3,17 +3,17 @@ layout: page
 title: Research
 permalink: /research/
 ---
-
 ## Research Interests
+
 - Labour
-- Urban economics
 - Housing
+- Crime economics
 
 ## Work in progress
 
 - With Anne Gielen, Elisabeth Leduc, and Olivier Marie (2025), *Excluded by Design: the effects of limiting neighbourhood access on incumbent residents.*
 
-<button onclick="toggleAbstract('abstractRwet')">Show Abstract</button>
+`<button onclick="toggleAbstract('abstractRwet')">`Show Abstract`</button>`
 
 <div id="abstractRwet" class="abstract-content" style="display: none;">
 {% raw %}
@@ -23,7 +23,7 @@ Neighbourhoods shape economic and life outcomes. Existing research relies on res
 
 - With Olivier Marie and Paolo Pinotti (2025), *Resolving the crime-migration puzzle.*
 
-<button onclick="toggleAbstract('abstractCrimeP')">Show Abstract</button>
+`<button onclick="toggleAbstract('abstractCrimeP')">`Show Abstract`</button>`
 
 <div id="abstractCrimeP" class="abstract-content" style="display: none;">
 {% raw %}
@@ -33,7 +33,7 @@ Immigration is known not to causally affect crime. Despite this, individuals wit
 
 - With Florian van Genderen (2026), *Debt burden and labour market outcomes.*
 
-<button onclick="toggleAbstract('abstractDebt')">Show Abstract</button>
+`<button onclick="toggleAbstract('abstractDebt')">`Show Abstract`</button>`
 
 <div id="abstractDebt" class="abstract-content" style="display: none;">
 {% raw %}
