@@ -1,8 +1,24 @@
 ---
 layout: page
-title: Other
+title: Writing
+eyebrow: "Opinion and press"
+heading: "Writing"
+lede: "Pieces written for a general audience, translating economic research into the public debate."
 permalink: /other/
 ---
-# Media Articles
 
-- [Franchise chez Delhaize: que nous enseignent les expériences à l&#39;étranger?](https://www.lecho.be/opinions/general/franchise-chez-delhaize-que-nous-enseignent-les-experiences-a-l-etranger/10483973.html) (in French)— *L'Echo*, 2023. I argue that Delhaize's franchise conversion is more likely to hurt wages of incumbent workers than total employment, drawing on evidence from the Dutch experience with franchising.
+<ul class="entries">
+  {%- for m in site.data.media %}
+  <li>
+    <article class="entry">
+      <p class="entry__meta">
+        <span class="entry__outlet">{{ m.outlet }}</span>
+        <span>{{ m.year }}</span>
+        {%- if m.language %}<span class="entry__lang">{{ m.language }}</span>{% endif %}
+      </p>
+      <h2 class="entry__title"><a href="{{ m.url }}" rel="noopener">{{ m.title }}</a></h2>
+      {%- if m.description %}<p class="entry__desc">{{ m.description }}</p>{% endif %}
+    </article>
+  </li>
+  {%- endfor %}
+</ul>

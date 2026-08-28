@@ -1,0 +1,25 @@
+<header class="masthead" data-masthead>
+  <div class="masthead__inner shell">
+    <a class="masthead__name" href="{{ '/' | relative_url }}">
+      <span class="masthead__given">Tommaso</span> Tulkens
+    </a>
+
+    <button class="masthead__toggle" type="button"
+            aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span class="masthead__toggle-bars" aria-hidden="true"><i></i><i></i></span>
+      <span class="u-visually-hidden">Menu</span>
+    </button>
+
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      {%- assign here = page.url -%}
+      {%- for item in site.nav -%}
+        {%- assign is_current = false -%}
+        {%- if item.url == '/' and here == '/' -%}{%- assign is_current = true -%}{%- endif -%}
+        {%- if item.url != '/' and here contains item.url -%}{%- assign is_current = true -%}{%- endif -%}
+        <a class="nav__link{% if is_current %} is-current{% endif %}"
+           href="{{ item.url | relative_url }}"
+           {% if is_current %}aria-current="page"{% endif %}>{{ item.title }}</a>
+      {%- endfor -%}
+    </nav>
+  </div>
+</header>

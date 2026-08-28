@@ -1,14 +1,59 @@
+# ---------------------------------------------------------------------------
+#  Site
+# ---------------------------------------------------------------------------
 title: "Tommaso Tulkens"
-description: "PhD candidate in economics at Erasmus university Rotterdam"
-theme: minima
+tagline: "PhD candidate in economics"
+description: >-
+  Tommaso Tulkens is a PhD candidate in economics at the Erasmus School of
+  Economics and the Tinbergen Institute. His research covers crime economics,
+  labour markets and place-based inequality.
 
-header_pages:
-  - index.md
-  - research.md
-  - teaching.md
-  - other.md
+url: "https://tommasotulkens.github.io"
+baseurl: "/economics"
 
+author:
+  name: "Tommaso Tulkens"
+  email: "tulkens@ese.eur.nl"
+
+# Shown in the footer and on the homepage.
+affiliations:
+  - name: "Erasmus School of Economics"
+    url: "https://www.eur.nl/en/ese"
+  - name: "Tinbergen Institute"
+    url: "https://www.tinbergen.nl/"
+
+# ---------------------------------------------------------------------------
+#  Navigation — edit the labels/order here and every page updates.
+# ---------------------------------------------------------------------------
+nav:
+  - title: "About"
+    url: "/"
+  - title: "Research"
+    url: "/research/"
+  - title: "Teaching"
+    url: "/teaching/"
+  - title: "Writing"
+    url: "/other/"
+
+# ---------------------------------------------------------------------------
+#  Build
+# ---------------------------------------------------------------------------
 plugins:
   - jekyll-sitemap
+  - jekyll-seo-tag
 
-include: ["_includes/head-custom.html"]
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "page"
+
+sass:
+  style: compressed
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .DS_Store

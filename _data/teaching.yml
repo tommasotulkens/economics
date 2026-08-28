@@ -1,0 +1,37 @@
+# ---------------------------------------------------------------------------
+#  Courses shown on /teaching/.
+#
+#  To publish a PDF: drop the file into  files/teaching/  and add one entry
+#  under `materials:` with its `name` and its `file` path. Nothing else to do.
+#
+#      materials:
+#        - name: "Lecture 2 slides"
+#          file: "/files/teaching/public-sector-lecture-2.pdf"
+#          tag: "PDF"          # optional label on the right
+# ---------------------------------------------------------------------------
+
+- code: "FEB13065"
+  title: "Seminar Economics of the Public Sector"
+  meta: "Bachelor · Erasmus School of Economics · Block 4"
+  description: >-
+    A research seminar in which students design and carry out their own empirical
+    project in public economics, from research question to written paper. The
+    sessions cover reading and discussing applied work, finding and handling data,
+    identification, and presenting results to an audience.
+  materials:
+    - name: "Q&A session slides"
+      file: "/files/teaching/public-sector-qa.pdf"
+      tag: "PDF"
+
+- code: "Supervision"
+  title: "Thesis supervision"
+  meta: "Bachelor & Master · Erasmus School of Economics"
+  description: >-
+    I supervise bachelor and master theses in applied microeconomics — labour,
+    crime, housing and public economics. The material below is what I hand out at
+    the start of the process: what a good research question looks like, how the
+    stages fit together, and what I expect at each deadline.
+  materials:
+    - name: "Session 1 — general information"
+      file: "/files/teaching/thesis-session-1.pdf"
+      tag: "PDF"

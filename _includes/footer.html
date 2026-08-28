@@ -1,0 +1,20 @@
+<footer class="footer">
+  <div class="shell footer__inner">
+    <div class="footer__block">
+      <p class="footer__name">Tommaso Tulkens</p>
+      <p class="footer__meta">
+        {%- for a in site.affiliations -%}
+          <a href="{{ a.url }}">{{ a.name }}</a>{% unless forloop.last %} <span aria-hidden="true">·</span> {% endunless %}
+        {%- endfor -%}
+      </p>
+    </div>
+
+    <nav class="footer__links" aria-label="Footer">
+      <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+      <a href="{{ '/files/CV_tulkens.pdf' | relative_url }}">Curriculum vitae</a>
+    </nav>
+  </div>
+  <p class="footer__fine shell">
+    © {{ site.time | date: "%Y" }} Tommaso Tulkens. Built with Jekyll, hosted on GitHub&nbsp;Pages.
+  </p>
+</footer>

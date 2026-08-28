@@ -1,0 +1,79 @@
+# ---------------------------------------------------------------------------
+#  Research output.
+#
+#  Each entry renders one item on /research/ (and the newest three on the
+#  homepage). Every field below `title` is optional:
+#
+#    status    small label above the title, e.g. "Work in progress"
+#    coauthors line under the title
+#    abstract  text behind the "Abstract" button — omit it and no button shows
+#    paper     path to a PDF in files/papers/  → "Working paper" button
+#    slides    path to a PDF in files/papers/  → "Slides" button
+#    on_request set to true when there is no PDF yet; shows a muted
+#               "Draft available on request" chip instead of a dead link
+# ---------------------------------------------------------------------------
+
+- title: "Excluded by design: the effects of limiting neighbourhood access on incumbent residents"
+  coauthors: "with Anne Gielen, Elisabeth Leduc and Olivier Marie"
+  status: "Work in progress"
+  year: 2026
+  paper: "/files/papers/excluded-by-design-paper.pdf"
+  slides: "/files/papers/excluded-by-design-slides.pdf"
+  abstract: >-
+    Neighbourhoods shape economic and life outcomes. Existing research relies on
+    selective residential moves to identify neighbourhood effects. We study these
+    effects using a plausibly exogenous change in composition induced by the
+    Rotterdam Wet, a policy barring workless individuals with less than six years
+    of residency in the region from moving into selected disadvantaged
+    neighbourhoods. The policy also displaced targeted areas' residents meeting
+    the work and tenure criteria at lease renewal. In targeted neighbourhoods,
+    the policy led to a persistent increase in the share of employed residents
+    and a decrease in welfare recipiency and criminal involvement, driven by
+    changes in the type of entrants. We observe a behavioural response among
+    incumbent residents, who increase their employment and decrease their welfare
+    participation and criminal behaviour. Exploiting the sharp discontinuity in
+    policy applicability at the six-year residency threshold, we show that
+    incumbent residents react to the displacement threat by exiting welfare and
+    informal work to take up formal employment. Future analyses exploiting
+    street-level data will establish the role of local peer composition on labour
+    outcomes and criminal offences.
+
+- title: "They took our crimes: resolving the immigration-crime puzzle"
+  coauthors: "with Olivier Marie and Paolo Pinotti"
+  status: "Work in progress"
+  year: 2026
+  # Drop the draft at files/papers/took-our-crimes-paper.pdf, then swap the two
+  # lines below (delete `on_request` and uncomment `paper`).
+  on_request: true
+  # paper: "/files/papers/took-our-crimes-paper.pdf"
+  slides: "/files/papers/took-our-crimes-slides.pdf"
+  abstract: >-
+    Immigration is known not to causally affect crime. Despite this, individuals
+    with a migration background are highly overrepresented in prisons. We propose
+    a framework reconciling these two facts. Causal estimates of immigration on
+    crime mask heterogeneity in the effects. Leveraging detailed administrative
+    data and two distinct research designs, we show that immigration leads to a
+    substitution between natives and immigrants in local crime markets whereas
+    the overall criminal activity is unchanged. We are able to rule out
+    discrimination as an alternative mechanism.
+
+# NOTE — the abstract below is a first draft written from the project slides.
+# Replace it with your own wording before you are happy for it to be public.
+- title: "Peer effects in voting: historical evidence from extending the franchise"
+  coauthors: "with Auke Rijpma"
+  status: "Work in progress"
+  year: 2026
+  abstract: >-
+    Does extending the right to vote change the economic position of those who
+    gain it? We study the Dutch franchise extensions of 1850, 1887 and 1896,
+    which raised the share of enfranchised men from roughly ten to close to fifty
+    per cent. Eligibility was tied to tax thresholds that varied across
+    municipalities, which lets us compare households just above and just below
+    the local cut-off in a stacked fuzzy regression discontinuity design. We
+    combine a digitised historical income panel of Dutch households covering
+    1860 to 1920 with electoral registers recording exactly who obtained the
+    right to vote. We use this setting to ask whether enfranchisement raised the
+    incomes of new voters and of their neighbours, and to examine the mechanisms
+    at work: the socio-economic composition of elected officials, municipal
+    spending on public goods, and the bargaining position of newly represented
+    occupations.

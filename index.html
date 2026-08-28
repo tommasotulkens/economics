@@ -1,0 +1,80 @@
+---
+layout: home
+title: "Tommaso Tulkens"
+heading: "About"
+permalink: /
+---
+
+<section class="shell hero" data-reveal>
+  <div class="hero__intro">
+    <p class="eyebrow">PhD candidate in economics</p>
+    <h1 class="hero__name">Tommaso&nbsp;Tulkens</h1>
+    <div class="hero__rule" aria-hidden="true"></div>
+
+    <div class="hero__body">
+      <p>
+        I am a PhD candidate at the <strong>Erasmus School of Economics</strong> in
+        Rotterdam and a fellow of the <strong>Tinbergen Institute</strong>, supervised
+        by Olivier Marie and Anne Gielen.
+      </p>
+      <p>
+        I work on applied microeconometrics and policy evaluation. Most of my research
+        asks how the places people live in, and the rules that govern access to them,
+        shape work, welfare and crime. I like research that keeps an eye on
+        multidisciplinarity — especially the dialogue between history and economics.
+      </p>
+    </div>
+
+    <ul class="facts">
+      <li><span class="facts__key">Supervisors</span><span class="facts__val">Olivier Marie · Anne Gielen</span></li>
+      <li><span class="facts__key">Email</span><span class="facts__val"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></span></li>
+      <li><span class="facts__key">Where</span><span class="facts__val">Erasmus University Rotterdam, the Netherlands</span></li>
+    </ul>
+
+    <ul class="chips">
+      <li><span class="chip">Crime economics</span></li>
+      <li><span class="chip">Labour economics</span></li>
+      <li><span class="chip">Housing &amp; neighbourhoods</span></li>
+      <li><span class="chip">Economic history</span></li>
+      <li><span class="chip">Applied microeconometrics</span></li>
+    </ul>
+
+    <div class="actions actions--hero">
+      <a class="btn btn--primary" href="{{ '/files/CV_tulkens.pdf' | relative_url }}">
+        {%- include icon.html name="download" -%}Curriculum vitae
+      </a>
+      <a class="btn" href="mailto:{{ site.author.email }}">
+        {%- include icon.html name="mail" -%}Get in touch
+      </a>
+    </div>
+  </div>
+
+  <figure class="hero__figure">
+    <img class="hero__photo"
+         src="{{ '/files/profile.jpg' | relative_url }}"
+         alt="Portrait of Tommaso Tulkens"
+         width="600" height="750">
+  </figure>
+</section>
+
+<section class="shell section section--ruled" data-reveal>
+  <h2 class="section__title">Research</h2>
+  <p class="section__note">Work in progress. Full abstracts, drafts and slides on the research page.</p>
+
+  <ul class="preview">
+    {%- for p in site.data.papers %}
+    <li>
+      <a class="preview__item" href="{{ '/research/' | relative_url }}">
+        <h3 class="preview__title">{{ p.title }}</h3>
+        <p class="preview__meta">
+          {{ p.coauthors }}{% if p.status %} <span aria-hidden="true">·</span> {{ p.status }}{% endif %}
+        </p>
+      </a>
+    </li>
+    {%- endfor %}
+  </ul>
+
+  <a class="more" href="{{ '/research/' | relative_url }}">
+    All research{% include icon.html name="arrow" %}
+  </a>
+</section>

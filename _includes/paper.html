@@ -1,0 +1,51 @@
+{%- assign p = include.paper -%}
+{%- assign uid = include.uid -%}
+<article class="paper">
+  {%- if p.status %}
+  <p class="paper__status">{{ p.status }}{% if p.year %} <span aria-hidden="true">·</span> {{ p.year }}{% endif %}</p>
+  {%- endif %}
+
+  <h3 class="paper__title">
+    {%- if p.paper -%}
+      <a href="{{ p.paper | relative_url }}">{{ p.title }}</a>
+    {%- else -%}
+      {{ p.title }}
+    {%- endif -%}
+  </h3>
+
+  {%- if p.coauthors %}<p class="paper__authors">{{ p.coauthors }}</p>{% endif %}
+
+  <div class="actions">
+    {%- if p.abstract %}
+    <button class="btn" type="button"
+            data-abstract-toggle
+            aria-expanded="false"
+            aria-controls="abstract-{{ uid }}">
+      {%- include icon.html name="chevron" -%}
+      <span data-abstract-label>Abstract</span>
+    </button>
+    {%- endif %}
+
+    {%- if p.paper %}
+    <a class="btn" href="{{ p.paper | relative_url }}" download>
+      {%- include icon.html name="download" -%}Working paper
+    </a>
+    {%- elsif p.on_request %}
+    <span class="btn btn--quiet">{%- include icon.html name="clock" -%}Draft available on request</span>
+    {%- endif %}
+
+    {%- if p.slides %}
+    <a class="btn" href="{{ p.slides | relative_url }}" download>
+      {%- include icon.html name="slides" -%}Slides
+    </a>
+    {%- endif %}
+  </div>
+
+  {%- if p.abstract %}
+  <div class="abstract" id="abstract-{{ uid }}" hidden>
+    <div class="abstract__inner">
+      <p class="abstract__text">{{ p.abstract }}</p>
+    </div>
+  </div>
+  {%- endif %}
+</article>

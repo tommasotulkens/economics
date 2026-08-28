@@ -1,53 +1,30 @@
 ---
 layout: page
 title: Research
+eyebrow: "Papers and projects"
+heading: "Research"
+lede: "I use large administrative datasets and quasi-experimental designs to study how place, policy and opportunity shape labour market and criminal behaviour."
 permalink: /research/
 ---
-## Research Interests
 
-- Labour
-- Housing
-- Crime economics
+<section class="section">
+  <h2 class="section__title">Research interests</h2>
+  <ul class="chips">
+    <li><span class="chip">Crime economics</span></li>
+    <li><span class="chip">Labour economics</span></li>
+    <li><span class="chip">Housing &amp; neighbourhoods</span></li>
+    <li><span class="chip">Economic history</span></li>
+    <li><span class="chip">Applied microeconometrics</span></li>
+  </ul>
+</section>
 
-## Work in progress
+<section class="section">
+  <h2 class="section__title">Work in progress</h2>
+  <p class="section__note">Drafts are preliminary — please do not cite or circulate without asking first.</p>
 
-- With Anne Gielen, Elisabeth Leduc, and Olivier Marie (2025), *Excluded by Design: the effects of limiting neighbourhood access on incumbent residents.*
-
-<button onclick="toggleAbstract('abstractRwet')">Show Abstract</button>
-
-<div id="abstractRwet" class="abstract-content" style="display: none;">
-{% raw %}
-Neighbourhoods shape economic and life outcomes. Existing research relies on residential moves to identify neighbourhood effects. We study these effects by using a plausibly exogenous change in composition induced by the Rotterdam Wet, a policy banning workless individuals from moving into selected neighbourhoods. In targeted neighbourhoods, the policy led to a persistent increase in the share of employed residents and a decrease in the share of residents receiving welfare benefits or having committed a crime. We observe a behavioural response among incumbent residents, who increase their employment and decrease their welfare participation. Employment effects for incumbents are driven by women and individuals between 35 and 60. Welfare effects are driven by women and single parents. The policy induced no measurable impacts on youth outcomes.
-{% endraw %}
-</div>
-
-- With Olivier Marie and Paolo Pinotti (2025), *Resolving the crime-migration puzzle.*
-
-<button onclick="toggleAbstract('abstractCrimeP')">Show Abstract</button>
-
-<div id="abstractCrimeP" class="abstract-content" style="display: none;">
-{% raw %}
-Immigration is known not to causally affect crime. Despite this, individuals with a migration background are highly overrepresented in prisons. We propose a framework reconciling these two facts. Causal estimates of immigration on crime mask heterogeneity in the effects. Leveraging detailed administrative data and two distinct research designs, we show that immigration leads to a substitution between natives and immigrants in local crime markets whereas the overall criminal activity is unchanged. We are able to rule out discrimination as an alternative mechanism.
-{% endraw %}
-</div>
-
-- With Florian van Genderen (2026), *Debt burden and labour market outcomes.*
-
-<button onclick="toggleAbstract('abstractDebt')">Show Abstract</button>
-
-<div id="abstractDebt" class="abstract-content" style="display: none;">
-{% raw %}
-TBA
-{% endraw %}
-</div>
-
-<script>
-function toggleAbstract(elementId) {
-  var abstract = document.getElementById(elementId);
-  if (abstract.style.display === "none") {
-    abstract.style.display = "block";
-  } else {
-    abstract.style.display = "none";
-  }
-}
-</script>
+  <ul class="papers">
+    {%- for p in site.data.papers %}
+    <li>{% include paper.html paper=p uid=forloop.index %}</li>
+    {%- endfor %}
+  </ul>
+</section>
