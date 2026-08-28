@@ -3,7 +3,7 @@ layout: page
 title: Writing
 eyebrow: "Opinion and press"
 heading: "Writing"
-lede: "Pieces written for a general audience, translating economic research into the public debate."
+lede: "Pieces I write for a general audience, bringing economic research into the public debate."
 permalink: /other/
 ---
 

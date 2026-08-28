@@ -17,7 +17,7 @@
   coauthors: "with Anne Gielen, Elisabeth Leduc and Olivier Marie"
   status: "Work in progress"
   year: 2026
-  paper: "/files/papers/excluded-by-design-paper.pdf"
+  on_request: true
   slides: "/files/papers/excluded-by-design-slides.pdf"
   abstract: >-
     Neighbourhoods shape economic and life outcomes. Existing research relies on
