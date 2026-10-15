@@ -1,0 +1,7 @@
+{%- comment -%}
+  "with A, B and C" from a list of names; see _includes/person.html.
+{%- endcomment -%}
+with {% for name in include.names -%}
+  {%- include person.html name=name plain=include.plain -%}
+  {%- unless forloop.last -%}{%- if forloop.rindex == 2 %} and {% else %}, {% endif -%}{%- endunless -%}
+{%- endfor -%}

@@ -16,6 +16,7 @@ you almost always edit a file in `_data/` — you should never have to touch a l
 _data/papers.yml      research output      → /research/ (and the homepage)
 _data/teaching.yml    courses + materials  → /teaching/
 _data/media.yml       press & opinion      → /other/
+_data/people.yml      coauthor websites    → links on coauthor names
 _config.yml           title, nav, email, affiliations
 
 files/papers/         PDFs of papers and slides
@@ -96,7 +97,7 @@ Put PDFs in `files/papers/`, then edit `_data/papers.yml`:
 
 ```yaml
 - title: "Title of the paper"
-  coauthors: "with A. Coauthor and B. Coauthor"
+  coauthors: ["A. Coauthor", "B. Coauthor"]   # → "with A. Coauthor and B. Coauthor"
   status: "Work in progress"      # small label above the title
   year: 2026
   paper:  "/files/papers/short-name-paper.pdf"    # → "Working paper" button
@@ -114,6 +115,10 @@ Every field except `title` is optional, and each one controls a button:
 | `paper`      | a **Working paper** button that downloads the PDF                 |
 | `slides`     | a **Slides** button that downloads the PDF                        |
 | `on_request` | `true` → a muted “Draft available on request” chip instead of a dead link |
+
+Coauthor names link to their websites when the name is listed in
+`_data/people.yml` (one `"Name": "https://..."` line per person, spelled exactly as
+in `coauthors:`). A name not listed there simply shows as plain text.
 
 Papers appear in the order they are listed, and the same list feeds the short
 research preview on the homepage.

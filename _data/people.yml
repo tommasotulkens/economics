@@ -1,0 +1,13 @@
+# ---------------------------------------------------------------------------
+#  Coauthors and supervisors, with the website their name links to.
+#
+#  Any name listed here becomes a link wherever it appears in `coauthors:` in
+#  _data/papers.yml (and in the supervisors line on the homepage). Spell the
+#  name exactly as in papers.yml. A name not listed here shows as plain text.
+# ---------------------------------------------------------------------------
+
+"Olivier Marie": "https://sites.google.com/site/oliviermarie/"
+"Anne Gielen": "https://annegielen.nl/"
+"Elisabeth Leduc": "https://sites.google.com/view/elisabethleduc/about-me"
+"Paolo Pinotti": "https://sites.google.com/view/paolo-pinotti"
+"Auke Rijpma": "https://aukerijpma.nl/"

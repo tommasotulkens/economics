@@ -13,7 +13,7 @@
     {%- endif -%}
   </h3>
 
-  {%- if p.coauthors %}<p class="paper__authors">{{ p.coauthors }}</p>{% endif %}
+  {%- if p.coauthors %}<p class="paper__authors">{% include coauthors.html names=p.coauthors %}</p>{% endif %}
 
   <div class="actions">
     {%- if p.abstract %}

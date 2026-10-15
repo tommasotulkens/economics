@@ -15,7 +15,7 @@ permalink: /
       <p>
         I am a PhD candidate at the <strong>Erasmus School of Economics</strong> in
         Rotterdam, affiliated to the <strong>Tinbergen Institute</strong>. I am
-        supervised by Olivier Marie and Anne Gielen.
+        supervised by {% include person.html name="Olivier Marie" %} and {% include person.html name="Anne Gielen" %}.
       </p>
       <p>
         My research focuses on applied econometrics and policy evaluation. I'm
@@ -25,7 +25,7 @@ permalink: /
     </div>
 
     <ul class="facts">
-      <li><span class="facts__key">Supervisors</span><span class="facts__val">Olivier Marie · Anne Gielen</span></li>
+      <li><span class="facts__key">Supervisors</span><span class="facts__val">{% include person.html name="Olivier Marie" %} · {% include person.html name="Anne Gielen" %}</span></li>
       <li><span class="facts__key">Email</span><span class="facts__val"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></span></li>
       <li><span class="facts__key">Where</span><span class="facts__val">Erasmus University Rotterdam, the Netherlands</span></li>
     </ul>
@@ -66,7 +66,7 @@ permalink: /
       <a class="preview__item" href="{{ '/research/' | relative_url }}">
         <h3 class="preview__title">{{ p.title }}</h3>
         <p class="preview__meta">
-          {{ p.coauthors }}{% if p.status %} <span aria-hidden="true">·</span> {{ p.status }}{% endif %}
+          {% include coauthors.html names=p.coauthors plain=true %}{% if p.status %} <span aria-hidden="true">·</span> {{ p.status }}{% endif %}
         </p>
       </a>
     </li>

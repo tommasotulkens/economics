@@ -1,0 +1,10 @@
+{%- comment -%}
+  A name, linked to the website listed for it in _data/people.yml.
+  Pass plain=true to print the bare name (e.g. inside another link).
+{%- endcomment -%}
+{%- assign url = site.data.people[include.name] -%}
+{%- if url and include.plain != true -%}
+  <a href="{{ url }}">{{ include.name }}</a>
+{%- else -%}
+  {{ include.name }}
+{%- endif -%}
