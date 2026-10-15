@@ -26,7 +26,7 @@ permalink: /
 
     <ul class="facts">
       <li><span class="facts__key">Supervisors</span><span class="facts__val">{% include person.html name="Olivier Marie" %} · {% include person.html name="Anne Gielen" %}</span></li>
-      <li><span class="facts__key">Email</span><span class="facts__val"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></span></li>
+      <li><span class="facts__key">Email</span><span class="facts__val"><a href="#" data-mailto="{{ site.author.email | escape }}">{{ site.author.email | escape }}</a></span></li>
       <li><span class="facts__key">Where</span><span class="facts__val">Erasmus University Rotterdam, the Netherlands</span></li>
     </ul>
 
@@ -42,7 +42,7 @@ permalink: /
       <a class="btn btn--primary" href="{{ '/files/CV_tulkens.pdf' | relative_url }}">
         {%- include icon.html name="download" -%}Curriculum vitae
       </a>
-      <a class="btn" href="mailto:{{ site.author.email }}">
+      <a class="btn" href="#" data-mailto="{{ site.author.email | escape }}">
         {%- include icon.html name="mail" -%}Get in touch
       </a>
     </div>

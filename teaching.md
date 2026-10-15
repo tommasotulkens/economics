@@ -47,6 +47,6 @@ permalink: /teaching/
     Students taking one of my courses should use <strong>Canvas</strong> for the
     complete and up-to-date material. What is posted here is the subset that is
     useful publicly. Questions are welcome at
-    <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>.
+    <a href="#" data-mailto="{{ site.author.email | escape }}">{{ site.author.email | escape }}</a>.
   </p>
 </div>

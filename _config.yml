@@ -13,7 +13,9 @@ baseurl: "/economics"
 
 author:
   name: "Tommaso Tulkens"
-  email: "tulkens@ese.eur.nl"
+  # Written with <at> instead of @ so scrapers cannot harvest it from the
+  # site; assets/js/site.js puts the @ back when someone clicks the link.
+  email: "tulkens<at>ese.eur.nl"
 
 # Shown in the footer and on the homepage.
 affiliations:

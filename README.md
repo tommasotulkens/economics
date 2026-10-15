@@ -128,7 +128,8 @@ research preview on the homepage.
 ## Other common edits
 
 - **Navigation labels and order** — the `nav:` block in `_config.yml`.
-- **Email address** — `author.email` in `_config.yml`; it updates the homepage,
+- **Email address** — `author.email` in `_config.yml`, written with `<at>` instead
+  of `@` (e.g. `name<at>domain.nl`) so it is never shown whole; it updates the homepage,
   the footer and the teaching page at once.
 - **A new CV** — overwrite `files/CV_tulkens.pdf`, keeping the filename.
 - **Colours and type** — the `:root` block at the top of `assets/css/main.css`.

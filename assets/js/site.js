@@ -1,4 +1,5 @@
-/* Small, dependency-free behaviours: abstract folds, mobile nav, sticky rule. */
+/* Small, dependency-free behaviours: abstract folds, mobile nav, sticky rule,
+   email links. */
 (function () {
   "use strict";
 
@@ -52,6 +53,16 @@
       nav.classList.toggle("is-open", !isOpen);
     });
   }
+
+  /* --- Email links ------------------------------------------------------
+     The page only ever shows the address as name<at>domain, so it never sits
+     whole in the HTML for scrapers; the mailto is assembled on click.       */
+  document.querySelectorAll("[data-mailto]").forEach(function (link) {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      window.location.href = "mailto:" + link.getAttribute("data-mailto").replace("<at>", "@");
+    });
+  });
 
   /* --- Hairline under the masthead once the page scrolls ---------------- */
   var masthead = document.querySelector("[data-masthead]");

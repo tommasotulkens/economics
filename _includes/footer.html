@@ -10,7 +10,7 @@
     </div>
 
     <nav class="footer__links" aria-label="Footer">
-      <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>
+      <a href="#" data-mailto="{{ site.author.email | escape }}">{{ site.author.email | escape }}</a>
       <a href="{{ '/files/CV_tulkens.pdf' | relative_url }}">Curriculum vitae</a>
     </nav>
   </div>
